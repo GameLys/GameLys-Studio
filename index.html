@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameLys | Creative Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-logo">
+            <img src="img/logo.png" alt="GameLys Logo" class="logo-img">
+            <span class="logo-text">Game<span>Lys</span></span>
+        </div>
+
+        <div class="navbar-actions" style="display: flex; align-items: center; gap: 20px;">
+            
+            <a href="https://github.com/GameLys" target="_blank" class="nav-github-link" title="Rejoindre GitHub">
+                <svg height="24" width="24" viewBox="0 0 16 16" fill="white"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+            </a>
+
+            <div class="language-switch">
+                <input type="checkbox" id="langToggle">
+                <label for="langToggle" class="lang-label">
+                    <span class="flag">🇫🇷</span>
+                    <span class="ball"></span>
+                    <span class="flag">🇬🇧</span>
+                </label>
+            </div>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                <span id="themeIcon">☀️</span> 
+            </button>
+        </div>
+    </div>
+</nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge" data-translate data-fr="Innovation Gaming 2026" data-en="Gaming Innovation 2026">Innovation Gaming 2026</div>
+                
+                <h1 class="hero-title" data-translate>
+                    <span data-fr="Créez l'avenir du" data-en="Create the future of">Créez l'avenir du</span> <span>Gaming</span>
+                </h1>
+                
+                <p class="hero-subtitle" data-translate 
+                   data-fr="Une communauté passionnée par le développement de jeux vidéo et l'innovation technologique. Rejoignez-nous pour bâtir des mondes." 
+                   data-en="A community passionate about game development and technological innovation. Join us to build worlds.">
+                   Une communauté passionnée par le développement de jeux vidéo et l'innovation technologique. Rejoignez-nous pour bâtir des mondes.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="https://discord.gg/pQVPJF49Tq" target="_blank" class="btn btn-primary" data-translate data-fr="Discord GameLys" data-en="GameLys Discord">Discord GameLys</a>
+                    <button class="btn btn-glass" id="myButton" data-translate data-fr="Rejoindre Lostsoul" data-en="Join Lostsoul">Rejoindre Lostsoul</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="img/logo.png" alt="Visual" class="floating-logo">
+            </div>
+        </section>
+
+        <section class="stats" id="stats-section">
+            <div class="stat-card">
+                <div class="stat-value" id="memberCount">0</div>
+                <div class="stat-label" data-translate data-fr="Membres Actifs" data-en="Active Members">Membres Actifs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="repoCount">0</div>
+                <div class="stat-label" data-translate data-fr="Projets GitHub" data-en="GitHub Projects">Projets GitHub</div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="section-title" data-translate data-fr="Nos Forces" data-en="Our Strengths">Nos Forces</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3 data-translate data-fr="Open Source" data-en="Open Source">Open Source</h3>
+                    <p data-translate data-fr="La collaboration est au cœur de GameLys. Tous nos codes sont partagés." data-en="Collaboration is at the heart of GameLys. All our codes are shared.">La collaboration est au cœur de GameLys. Tous nos codes sont partagés.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3 data-translate data-fr="Communauté" data-en="Community">Communauté</h3>
+                    <p data-translate data-fr="Partagez vos connaissances sur Discord et progressez ensemble." data-en="Share your knowledge on Discord and progress together.">Partagez vos connaissances sur Discord et progressez ensemble.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3 data-translate data-fr="Innovation" data-en="Innovation">Innovation</h3>
+                    <p data-translate data-fr="Utilisation des dernières technologies pour créer des expériences uniques." data-en="Using the latest technologies to create unique experiences.">Utilisation des dernières technologies pour créer des expériences uniques.</p>
+                </div>
+            </div>
+        </section>
+
+<section class="staff-section">
+    <h2 class="section-title" data-translate data-fr="Les Lys" data-en="The Lys">The CoreLys</h2>
+    <div class="staff-grid">
+        
+        <div class="staff-card">
+            <a href="https://github.com/djael-ml" target="_blank" class="staff-link">
+                <div class="staff-card-inner">
+                    <div class="staff-front">
+                        <div class="staff-img-container">
+                            <img src="img/staff1.png" alt="djael">
+                        </div>
+                        <h3>【ŁS】 djael</h3>
+                        <span class="staff-role" data-translate data-fr="Fondateur" data-en="Founder">Fondateur</span>
+                    </div>
+                    <div class="staff-back">
+                        <p data-translate 
+                           data-fr="Fondateur et développeur passionné, j'aime créer des univers immersifs." 
+                           data-en="Founder and passionate developer, I love creating immersive worlds.">
+                           Fondateur et développeur passionné, j'aime créer des univers immersifs.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="staff-card">
+            <a href="https://github.com/Voltron94" target="_blank" class="staff-link">
+                <div class="staff-card-inner">
+                    <div class="staff-front">
+                        <div class="staff-img-container">
+                            <img src="img/staff2.png" alt="Voltron">
+                        </div>
+                        <h3>【ŁS】Voltron</h3>
+                        <span class="staff-role" data-translate data-fr="Fondateur" data-en="Founder">Fondateur</span>
+                    </div>
+                    <div class="staff-back">
+                        <p data-translate 
+                           data-fr="Modérateur et gardien de la communauté. Toujours là pour vous aider !" 
+                           data-en="Moderator and community guardian. Always here to help you!">
+                           Modérateur et gardien de la communauté. Toujours là pour vous aider !
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="staff-card">
+            <a href="https://github.com/CodaxOn" target="_blank" class="staff-link">
+                <div class="staff-card-inner">
+                    <div class="staff-front">
+                        <div class="staff-img-container">
+                            <img src="img/staff3.png" alt="CodaxOn">
+                        </div>
+                        <h3>【ŁS】CodaxOn</h3>
+                        <span class="staff-role" data-translate data-fr="Développeur" data-en="Developer">Développeur</span>
+                    </div>
+                    <div class="staff-back">
+                        <p data-translate 
+                           data-fr="Fondateur et développeur passionné, j'aime créer des univers immersifs." 
+                           data-en="Founder and passionate developer, I love creating immersive worlds.">
+                           Fondateur et développeur passionné, j'aime créer des univers immersifs.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <p data-translate data-fr="© 2026 GameLys - Communauté de Développement" data-en="© 2026 GameLys - Development Community">© 2026 GameLys - Communauté de Développement</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

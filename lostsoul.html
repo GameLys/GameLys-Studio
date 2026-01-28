@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Soul | GameLys Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="img/logo.png" alt="GameLys Logo" class="logo-img">
+                <span class="logo-text">Game<span>Lys</span></span>
+            </div>
+            
+            <div class="navbar-actions" style="display: flex; align-items: center; gap: 15px;">
+                <div class="language-switch">
+                    <input type="checkbox" id="langToggle">
+                    <label for="langToggle" class="lang-label">
+                        <span class="flag">🇫🇷</span>
+                        <span class="ball"></span>
+                        <span class="flag">🇬🇧</span>
+                    </label>
+                </div>
+
+                <a href="index.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.8rem;" data-translate data-fr="← ACCUEIL" data-en="← HOME">← ACCUEIL</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero" style="min-height: auto; padding: 40px 2rem;">
+            <div class="hero-content" style="text-align: center; max-width: 100%;">
+                
+                <img src="https://github.com/djael-ml/lostsoul_ws/blob/main/img/logo.png?raw=true" 
+                     alt="Lost Soul Logo" 
+                     style="width: 70px; display: block; margin: 0 auto 35px auto;">
+
+                <h1 class="hero-title" data-translate>
+                    <span data-fr="Bienvenue chez" data-en="Welcome to">Bienvenue chez</span> <span>Lost Soul</span>
+                </h1>
+                
+                <p class="hero-subtitle" style="margin: 25px auto;" data-translate 
+                   data-fr="Rejoignez notre communauté gaming dynamique ! Jouez ensemble, créez des souvenirs et explorez des mondes virtuels fascinants 🎮" 
+                   data-en="Join our dynamic gaming community! Play together, create memories and explore fascinating virtual worlds 🎮">
+                    Rejoignez notre communauté gaming dynamique ! Jouez ensemble, créez des souvenirs et explorez des mondes virtuels fascinants 🎮
+                </p>
+                
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="https://discord.gg/jamfS8hw8e" class="btn btn-primary" data-translate data-fr="Discord LostSoul" data-en="LostSoul Discord">Discord LostSoul</a>
+                    <a href="#stats-section" class="btn btn-glass" data-translate data-fr="Voir nos Stats" data-en="See our Stats">Voir nos Stats</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="features">
+        <h2 class="section-title" data-translate data-fr="Nos Jeux" data-en="Our Games">Nos Jeux</h2>
+        <div class="features-grid">
+            
+            <div class="feature-card">
+                <div class="feature-badge">
+                    <img src="data:image/jpeg;base64,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" alt="Minecraft">
+                </div>
+                <h3>Minecraft</h3>
+                <p data-translate data-fr="Construisez et explorez dans nos serveurs Minecraft privatisés." data-en="Build and explore in our private Minecraft servers.">Construisez et explorez dans nos serveurs Minecraft privatisés.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-badge">
+                    <img src="data:image/png;base64,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" alt="Roblox">
+                </div>
+                <h3>Roblox</h3>
+                <p data-translate data-fr="Découvrez des jeux créés par la communauté sur Roblox." data-en="Discover community-created games on Roblox.">Découvrez des jeux créés par la communauté sur Roblox.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-badge">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFWfTCBbRhAT2yj7RjRol0wHj6PIur106PKeAEWtSP2Q&s" alt="Rucoy Online">
+                </div>
+                <h3>Rucoy Online</h3>
+                <p data-translate data-fr="Aventure MMO classique avec nos joueurs passionnés." data-en="Classic MMO adventure with our passionate players.">Aventure MMO classique avec nos joueurs passionnés.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-badge">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-zDYywoMhD4wUEcPyKPiuyGKqbgzIw0pzzc2zgEilgg&s" alt="Starblast">
+                </div>
+                <h3>Starblast</h3>
+                <p data-translate data-fr="Combats spatiaux intenses et compétitifs en équipe." data-en="Intense and competitive space team battles.">Combats spatiaux intenses et compétitifs en équipe.</p>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="section-title" data-translate data-fr="Nos Stats" data-en="Our Stats">Nos Stats</h2>
+    <section id="stats-section" class="stats" style="margin-top: 50px;">
+        <div class="stat-card">
+            <div class="stat-value" id="memberCount">0</div>
+            <div class="stat-label" data-translate data-fr="Membres Actifs" data-en="Active Members">Membres Actifs</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="repoCount">0</div>
+            <div class="stat-label" data-translate data-fr="Projets GitHub" data-en="GitHub Projects">Projets GitHub</div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title" data-translate data-fr="Pourquoi nous rejoindre ?" data-en="Why join us?">Pourquoi nous rejoindre ?</h2>
+        <div class="features-grid">
+            
+            <div class="feature-card">
+                <div class="feature-number" style="background: linear-gradient(135deg, #ededed, #a855f7); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin-bottom: 20px;">1</div>
+                <h3 data-translate data-fr="Communauté Accueillante" data-en="Welcoming Community">Communauté Accueillante</h3>
+                <p data-translate data-fr="Des joueurs de tous les niveaux, toujours prêts à s'entraider." data-en="Players of all levels, always ready to help each other.">Des joueurs de tous les niveaux, toujours prêts à s'entraider.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-number" style="background: linear-gradient(135deg, #ededed, #a855f7); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin-bottom: 20px;">2</div>
+                <h3 data-translate data-fr="Événements Réguliers" data-en="Regular Events">Événements Réguliers</h3>
+                <p data-translate data-fr="Tournois, défis et événements spéciaux chaque semaine." data-en="Tournaments, challenges and special events every week.">Tournois, défis et événements spéciaux chaque semaine.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-number" style="background: linear-gradient(135deg, #ededed, #a855f7); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 8px; margin-bottom: 20px;">3</div>
+                <h3 data-translate data-fr="Jeux Variés" data-en="Various Games">Jeux Variés</h3>
+                <p data-translate data-fr="4 jeux différents pour tous les goûts." data-en="4 different games for all tastes.">4 jeux différents pour tous les goûts.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="final-cta" style="padding: 80px 2rem; text-align: center;">
+        <div class="stat-card" style="max-width: 800px; margin: 0 auto; background: linear-gradient(145deg, var(--glass), rgba(168, 85, 247, 0.1));">
+            <h2 class="hero-title" style="font-size: 2rem; margin-bottom: 20px;" data-translate>
+                <span data-fr="Prêt à nous" data-en="Ready to">Prêt à nous</span> <span>rejoindre ?</span>
+            </h2>
+            <p class="hero-subtitle" style="margin: 0 auto 30px auto;" data-translate
+               data-fr="Que tu sois développeur, joueur ou simple curieux, il y a toujours une place pour toi chez Lost Soul & GameLys."
+               data-en="Whether you are a developer, player or just curious, there is always a place for you at Lost Soul & GameLys.">
+               Que tu sois développeur, joueur ou simple curieux, il y a toujours une place pour toi chez Lost Soul & GameLys.
+            </p>
+            <div class="hero-buttons" style="justify-content: center;">
+                <a href="https://discord.gg/2kDzyARjNb" target="_blank" class="btn btn-primary" data-translate data-fr="Lancer l'aventure" data-en="Start the adventure">Lancer l'aventure</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p data-translate data-fr="© 2026 GameLys - Collaboration Lost Soul" data-en="© 2026 GameLys - Lost Soul Collaboration">© 2026 GameLys - Collaboration Lost Soul</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
